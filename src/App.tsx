@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { 
   Download, Link2,
   Loader2, Terminal, Zap,
-  Youtube, Twitter, Facebook, Instagram, Film,
-  ChevronDown, ChevronUp, Globe,
+  ChevronDown, ChevronUp,
+  Youtube, Twitter, Facebook, Instagram, Film, Globe,
   Play, FileAudio, FileVideo, List, Image as ImageIcon,
   Clock, Eye, User
 } from 'lucide-react';
@@ -190,13 +190,6 @@ export default function App() {
     ? [{ value: 'best', label: 'Mejor calidad' }, { value: '320k', label: '320 kbps' }, { value: '192k', label: '192 kbps' }, { value: '128k', label: '128 kbps' }]
     : [{ value: 'best', label: 'Mejor calidad' }, { value: '1080p', label: '1080p' }, { value: '720p', label: '720p' }, { value: '480p', label: '480p' }, { value: '360p', label: '360p' }];
 
-  const platforms = [
-    { id: 'youtube', name: 'YouTube', icon: Youtube, color: 'text-red-500' },
-    { id: 'tiktok', name: 'TikTok', icon: Film, color: 'text-cyan-400' },
-    { id: 'twitter', name: 'X', icon: Twitter, color: 'text-sky-400' },
-    { id: 'facebook', name: 'Facebook', icon: Facebook, color: 'text-blue-500' },
-    { id: 'instagram', name: 'Instagram', icon: Instagram, color: 'text-pink-500' },
-  ];
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-white relative overflow-hidden">
